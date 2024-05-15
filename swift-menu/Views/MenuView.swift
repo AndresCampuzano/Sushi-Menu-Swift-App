@@ -22,7 +22,7 @@ struct MenuView: View {
         }
         .padding()
         List(menuItems) { item in
-            MenuComponent(item: item)
+            MenuItemRow(data: item)
         }
         .listStyle(.plain)
         .onAppear {

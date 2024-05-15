@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct MenuComponent: View {
-    var item:MenuStructure
+struct MenuItemRow: View {
+    var data:MenuStructure
     
     var body: some View {
         HStack {
-            Image(item.imageName)
+            Image(data.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 50)
                 .cornerRadius(10)
-            Text(item.name)
+            Text(data.name)
                 .bold()
             Spacer()
-            Text("$" + item.price)
+            Text("$" + data.price)
         }
         .listRowSeparator(.hidden)
         .listRowBackground(
@@ -31,5 +31,5 @@ struct MenuComponent: View {
 }
 
 #Preview {
-    MenuComponent(item: MenuStructure(name: "Onigiri", price: "1.99", imageName: "onigiri"))
+    MenuItemRow(data: MenuStructure(name: "Onigiri", price: "1.99", imageName: "onigiri"))
 }
