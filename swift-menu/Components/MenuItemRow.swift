@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct MenuStructure: Identifiable {
+    var id: UUID = UUID()
+    var name:String
+    var price:String
+    var imageName:String
+}
+
+
 struct MenuItemRow: View {
     var data:MenuStructure
     

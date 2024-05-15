@@ -10,9 +10,9 @@
 		F1585CA92BF3C8B900808545 /* swift_menuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CA82BF3C8B900808545 /* swift_menuApp.swift */; };
 		F1585CAB2BF3C8B900808545 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CAA2BF3C8B900808545 /* MenuView.swift */; };
 		F1585CAD2BF3C8BC00808545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1585CAC2BF3C8BC00808545 /* Assets.xcassets */; };
-		F1585CB72BF3CC5000808545 /* MenuStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CB62BF3CC5000808545 /* MenuStructure.swift */; };
 		F1585CB92BF4317B00808545 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CB82BF4317B00808545 /* DataService.swift */; };
 		F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CBF2BF4395B00808545 /* MenuItemRow.swift */; };
+		F179D08D2BF4F69000CE1F8B /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F179D08C2BF4F69000CE1F8B /* SplineRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		F1585CA82BF3C8B900808545 /* swift_menuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_menuApp.swift; sourceTree = "<group>"; };
 		F1585CAA2BF3C8B900808545 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		F1585CAC2BF3C8BC00808545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F1585CB62BF3CC5000808545 /* MenuStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStructure.swift; sourceTree = "<group>"; };
 		F1585CB82BF4317B00808545 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F1585CBF2BF4395B00808545 /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179D08D2BF4F69000CE1F8B /* SplineRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,6 @@
 				F1585CA82BF3C8B900808545 /* swift_menuApp.swift */,
 				F1585CAC2BF3C8BC00808545 /* Assets.xcassets */,
 				F1585CBD2BF437DC00808545 /* Views */,
-				F1585CBE2BF437EF00808545 /* Structures */,
 				F1585CBA2BF4376900808545 /* Components */,
 				F1585CBB2BF4378000808545 /* Services */,
 			);
@@ -89,14 +88,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F1585CBE2BF437EF00808545 /* Structures */ = {
-			isa = PBXGroup;
-			children = (
-				F1585CB62BF3CC5000808545 /* MenuStructure.swift */,
-			);
-			path = Structures;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +104,9 @@
 			dependencies = (
 			);
 			name = "swift-menu";
+			packageProductDependencies = (
+				F179D08C2BF4F69000CE1F8B /* SplineRuntime */,
+			);
 			productName = "swift-menu";
 			productReference = F1585CA52BF3C8B900808545 /* swift-menu.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +135,9 @@
 				Base,
 			);
 			mainGroup = F1585C9C2BF3C8B900808545;
+			packageReferences = (
+				F179D08B2BF4F69000CE1F8B /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			productRefGroup = F1585CA62BF3C8B900808545 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,7 +163,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1585CB72BF3CC5000808545 /* MenuStructure.swift in Sources */,
 				F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */,
 				F1585CAB2BF3C8B900808545 /* MenuView.swift in Sources */,
 				F1585CA92BF3C8B900808545 /* swift_menuApp.swift in Sources */,
@@ -376,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F179D08B2BF4F69000CE1F8B /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F179D08C2BF4F69000CE1F8B /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F179D08B2BF4F69000CE1F8B /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1585C9D2BF3C8B900808545 /* Project object */;
 }
