@@ -38,8 +38,8 @@ struct MenuView: View {
                 print("REFRESH")
             }
             .navigationTitle("Menu")
-            .navigationDestination(for: MenuStructure.self) { item in
-                MenuDetailView(data: item)
+            .navigationDestination(for: MenuStructure.self) { value in
+                MenuDetailView(data: value)
             }
             .toolbar {
                 Button(action: {}) {
