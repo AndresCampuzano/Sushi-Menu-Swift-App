@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MenuItem: Identifiable {
+struct MenuStructure: Identifiable {
     var id: UUID = UUID()
     var name:String
     var price:String
