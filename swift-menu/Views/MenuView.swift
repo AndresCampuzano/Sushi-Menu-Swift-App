@@ -5,7 +5,6 @@
 //  Created by Andres C G on 5/14/24.
 //
 
-import SplineRuntime
 import SwiftUI
 
 struct MenuView: View {
@@ -14,7 +13,7 @@ struct MenuView: View {
     var dataService = DataService()
     
     var body: some View {
-        Header()
+        SushiRender()
             .frame(height: 200)
         List(menuItems) { item in
             MenuItemRow(data: item)
@@ -33,14 +32,3 @@ struct MenuView: View {
 
 
 
-struct Header: View {
-    var body: some View {
-        // fetching from cloud
-        let url = URL(string: "https://build.spline.design/e2nWk41Aq-IN2gshGt0d/scene.splineswift")!
-
-        // // fetching from local
-        // let url = Bundle.main.url(forResource: "scene", withExtension: "splineswift")!
-
-        try? SplineView(sceneFileURL: url).ignoresSafeArea(.all)
-    }
-}

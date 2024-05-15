@@ -12,6 +12,7 @@
 		F1585CAD2BF3C8BC00808545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1585CAC2BF3C8BC00808545 /* Assets.xcassets */; };
 		F1585CB92BF4317B00808545 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CB82BF4317B00808545 /* DataService.swift */; };
 		F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CBF2BF4395B00808545 /* MenuItemRow.swift */; };
+		F170E2F22BF51C22001223E8 /* SushiRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F12BF51C22001223E8 /* SushiRender.swift */; };
 		F179D08D2BF4F69000CE1F8B /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F179D08C2BF4F69000CE1F8B /* SplineRuntime */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		F1585CAC2BF3C8BC00808545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1585CB82BF4317B00808545 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F1585CBF2BF4395B00808545 /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
+		F170E2F12BF51C22001223E8 /* SushiRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiRender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F1585CBF2BF4395B00808545 /* MenuItemRow.swift */,
+				F170E2F12BF51C22001223E8 /* SushiRender.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */,
+				F170E2F22BF51C22001223E8 /* SushiRender.swift in Sources */,
 				F1585CAB2BF3C8B900808545 /* MenuView.swift in Sources */,
 				F1585CA92BF3C8B900808545 /* swift_menuApp.swift in Sources */,
 				F1585CB92BF4317B00808545 /* DataService.swift in Sources */,
