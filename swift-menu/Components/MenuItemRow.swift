@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct MenuStructure: Identifiable {
-    var id: UUID = UUID()
-    var name:String
-    var price:String
-    var imageName:String
+struct MenuStructure: Hashable, Identifiable {
+    let id: UUID = UUID()
+    let name:String
+    let price:String
+    let imageName:String
+    let description:String
 }
 
 
@@ -30,14 +31,11 @@ struct MenuItemRow: View {
             Spacer()
             Text("$" + data.price)
         }
-        .listRowSeparator(.hidden)
-        .listRowBackground(
-            Color(.brown)
-            .opacity(0.1)
-        )
+        .padding()
+        .background(Color(.brown).opacity(0.1))
     }
 }
 
 #Preview {
-    MenuItemRow(data: MenuStructure(name: "Onigiri", price: "1.99", imageName: "onigiri"))
+    MenuItemRow(data: MenuStructure(name: "Onigiri", price: "1.99", imageName: "onigiri", description: "Traditional Japanese rice balls filled with savory ingredients, wrapped in seaweed, and perfect for a quick and satisfying snack."))
 }

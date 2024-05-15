@@ -16,7 +16,7 @@ struct SushiRender: View {
         // // fetching from local
         // let url = Bundle.main.url(forResource: "scene", withExtension: "splineswift")!
 
-        try? SplineView(sceneFileURL: url).ignoresSafeArea(.all)
+        try? SplineView(sceneFileURL: url)
     }
 }
 
