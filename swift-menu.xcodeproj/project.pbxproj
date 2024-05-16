@@ -14,6 +14,9 @@
 		F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1585CBF2BF4395B00808545 /* MenuItemRow.swift */; };
 		F170E2F22BF51C22001223E8 /* SushiRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F12BF51C22001223E8 /* SushiRender.swift */; };
 		F170E2F42BF5440C001223E8 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F32BF5440C001223E8 /* MenuDetailView.swift */; };
+		F170E2F62BF5834B001223E8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F52BF5834B001223E8 /* AccountView.swift */; };
+		F170E2F82BF58792001223E8 /* TabWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F72BF58792001223E8 /* TabWrapper.swift */; };
+		F170E2FA2BF58FCE001223E8 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E2F92BF58FCE001223E8 /* OrderView.swift */; };
 		F179D08D2BF4F69000CE1F8B /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F179D08C2BF4F69000CE1F8B /* SplineRuntime */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,10 @@
 		F1585CBF2BF4395B00808545 /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
 		F170E2F12BF51C22001223E8 /* SushiRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiRender.swift; sourceTree = "<group>"; };
 		F170E2F32BF5440C001223E8 /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
+		F170E2F52BF5834B001223E8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F170E2F72BF58792001223E8 /* TabWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabWrapper.swift; sourceTree = "<group>"; };
+		F170E2F92BF58FCE001223E8 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		F170E2FB2BF5C271001223E8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +71,7 @@
 				F1585CBD2BF437DC00808545 /* Views */,
 				F1585CBA2BF4376900808545 /* Components */,
 				F1585CBB2BF4378000808545 /* Services */,
+				F170E2FB2BF5C271001223E8 /* MyPlayground.playground */,
 			);
 			path = "swift-menu";
 			sourceTree = "<group>";
@@ -88,8 +96,11 @@
 		F1585CBD2BF437DC00808545 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F170E2F72BF58792001223E8 /* TabWrapper.swift */,
 				F1585CAA2BF3C8B900808545 /* MenuView.swift */,
 				F170E2F32BF5440C001223E8 /* MenuDetailView.swift */,
+				F170E2F92BF58FCE001223E8 /* OrderView.swift */,
+				F170E2F52BF5834B001223E8 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,10 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F170E2FA2BF58FCE001223E8 /* OrderView.swift in Sources */,
 				F170E2F42BF5440C001223E8 /* MenuDetailView.swift in Sources */,
 				F1585CC02BF4395B00808545 /* MenuItemRow.swift in Sources */,
+				F170E2F82BF58792001223E8 /* TabWrapper.swift in Sources */,
 				F170E2F22BF51C22001223E8 /* SushiRender.swift in Sources */,
 				F1585CAB2BF3C8B900808545 /* MenuView.swift in Sources */,
+				F170E2F62BF5834B001223E8 /* AccountView.swift in Sources */,
 				F1585CA92BF3C8B900808545 /* swift_menuApp.swift in Sources */,
 				F1585CB92BF4317B00808545 /* DataService.swift in Sources */,
 			);

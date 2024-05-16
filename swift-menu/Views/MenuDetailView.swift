@@ -19,25 +19,27 @@ struct MenuDetailView: View {
         ZStack {
             Color(.brown).opacity(0.1)
                            .edgesIgnoringSafeArea(.all)
-            VStack {
-                Spacer()
-                Image(data.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 300)
-                    .cornerRadius(10)
-                Text(data.name)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding(.bottom, 20)
-                Text(data.description)
-                Spacer()
-                Button(action: addToOrder) {
-                    Label("Add to order", systemImage: "plus")
-                }.buttonStyle(.borderedProminent)
-                Spacer()
+            ScrollView {
+                VStack {
+                    Spacer()
+                    Image(data.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 300)
+                        .cornerRadius(10)
+                    Text(data.name)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.bottom, 20)
+                    Text(data.description)
+                    Spacer()
+                    Button(action: addToOrder) {
+                        Label("Add to order", systemImage: "cart")
+                    }.buttonStyle(.borderedProminent)
+                    Spacer()
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }

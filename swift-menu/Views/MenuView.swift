@@ -34,7 +34,9 @@ struct MenuView: View {
             }
             .onAppear {
                 menuItems = dataService.getData()
-            }.refreshable {
+            }
+            
+            .refreshable {
                 print("REFRESH")
             }
             .navigationTitle("Menu")
@@ -42,16 +44,11 @@ struct MenuView: View {
                 MenuDetailView(data: value)
             }
             .toolbar {
-                Button(action: {}) {
-                    Image(systemName: "square.and.arrow.up")
-                }
-                Button(action: {}) {
-                    Image(systemName: "slider.horizontal.3")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "heart.fill")
                 }
             }
         }
-        
-       
     }
 }
 
