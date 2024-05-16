@@ -15,7 +15,7 @@ struct MenuView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack() {
+                LazyVStack() {
                     SushiRender()
                         .frame(height: 200)
                     Spacer()

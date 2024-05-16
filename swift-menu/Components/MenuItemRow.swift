@@ -28,8 +28,10 @@ struct MenuItemRow: View {
                 .cornerRadius(10)
             Text(data.name)
                 .bold()
+                .foregroundStyle(Color(.label))
             Spacer()
             Text("$" + data.price)
+                .foregroundStyle(Color(.label))
         }
         .padding()
         .background(Color(.brown).opacity(0.1))
